@@ -1,22 +1,32 @@
 'use strict';
 
-const favSeason = prompt( 'What is your favorite season?' );
-const favVacation = prompt( 'Which vacation spot do you prefer? Beach or mountains?' );
+let score;
 
-if ( favSeason.toLowerCase() === 'spring' && favVacation.toLowerCase() === 'beach' ) {
+const seasons = ['fall','autumn','summer','winter','spring'];
+// const vacations = ['beach','mountains'];
+
+// TODO ask user their favSeason until they answer correctly
+let favSeason = prompt( 'What is your favorite season?' ); // 'winter'
+
+while ( !seasons.includes(favSeason) ) {
+    favSeason = prompt('No, really, what is your fav season??');
+}
+
+score = seasons.indexOf(favSeason); // 3
+
+
+
+// console.log(seasons.includes(favSeason));
+
+
+// TODO ask user their favVacation until they answer correctly
+// const favVacation = prompt( 'Which vacation spot do you prefer? Beach or mountains?' );
+
+// TODO return a function based on a user's score (using their answer's index)
+if (score === 0) {
     alert( 'you are parseInt()' );
-} else if ( favSeason.toLowerCase() === 'spring' && favVacation.toLowerCase() === 'mountains' ) {
+} else if (score < 3) {
     alert( 'you are .toLowerCase()' );
-} else if ( favSeason.toLowerCase() === 'fall' || favSeason.toLowerCase() === 'autumn' ) {
-    if ( favVacation.toLowerCase() === 'beach' ) {
-        alert( 'you are console.log()' );
-    } else if ( favVacation.toLowerCase() === 'mountain' ) {
-        alert( 'you are typeof()' );
-    }
-} else if ( favSeason.toLowerCase() === 'summer' ) {
-    alert( 'you are alert()' );
-} else if ( favSeason.toLowerCase() === 'winter' ) {
-    alert(  'you are prompt()' );
-} else {
-    alert( 'you are Math.random()' );
+} else if (score >= 3) {
+    alert( 'you are console.log()' );
 }
