@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+}
+
+#css {
+    color: blue;
+    font-size: 30px;
+
+    padding: 50px;
+    border: solid 1px blue;
+    margin: 20px;
+}
+
+.big-list {
+    font-size: 10px;
+}
+
+#js p {
+    color: purple;
+}
