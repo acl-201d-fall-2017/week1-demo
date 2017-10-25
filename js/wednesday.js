@@ -7,13 +7,33 @@
 
 /* 2. Loops! */
 
+// console.log('12');
+// console.log('12');
+// console.log('12');
+// console.log('12');
+// console.log('12');
+// console.log('12');
+// console.log('12');
+
 // for loop
+for (let i = 0; i < 12; i++) {
+    console.log( i + ': 12');
+}
 
 // while loop
+let i = 12; // initializer
+while (i < 12) { //condition
+    console.log(i + ' in our while loop!');
+    i++; //update
+}
 
 // do while loop
+let j = 12;
+do {
+    console.log(j + ': in the do while');
+    j++;
+} while (j < 12);
 
-const go = '?';
 
 // const hot;
 
