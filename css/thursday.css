@@ -1,0 +1,51 @@
+section {
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: dotted rgba(0,0,0,.5) 2px;
+}
+
+/* specificity rules!
+   id > class > element
+
+   multi-faceted selectors > single selectors
+*/
+
+ul > li {
+    color: red;
+}
+
+li {
+    color: blue;
+}
+
+#javascript .highlight {
+    color: purple;
+}
+
+.highlight {
+    color: green;
+}
+
+
+
+/* positioning elements */
+
+section#html {
+    position: static;
+    /* position: relative; */
+    /* position: absolute; */
+    /* position: fixed; */
+    /* position: sticky; */
+    
+    top: 30px;
+}
+
+
+
+/* positioning elements side by side */
+
+main section {
+    /* float: right; */
+    /* display: flex; */
+}
