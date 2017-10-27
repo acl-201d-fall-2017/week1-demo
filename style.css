@@ -1,0 +1,59 @@
+body {
+    background-color: lightgray;
+}
+
+nav ul {
+    list-style: none;
+    padding: none;
+
+    display: flex;
+}
+
+nav li {
+    padding: 10px 30px;
+}
+
+nav li:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sticker {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 3px;
+
+    /* TODO move the sticker to the edge of the article */
+}
+
+main {
+    min-width: 400px;
+    width: 50%;
+
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+main h1 {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+article {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
