@@ -4,8 +4,11 @@ body {
 
 nav ul {
     list-style: none;
-    padding: none;
+    padding: 0;
+
     /* TODO style the nav so the menu items are next to each other */
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
@@ -32,6 +35,11 @@ nav li:hover {
     letter-spacing: 3px;
 
     /* TODO move the sticker to the edge of the article */
+    /* margin: -30px; */
+
+    position: absolute;
+    left: -25px;
+    top: -30px;
 }
 
 main {
@@ -48,13 +56,21 @@ main h1 {
     top: 0;
     background-color: lightgray;
     padding: 20px 0;
+    z-index: 3;
 }
 
 article {
     background-color: white;
     width: 80%;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 10px;
+
+    position: relative;
 }
 
 /* TODO style images so their centered and not exceeding their parent */
+img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
