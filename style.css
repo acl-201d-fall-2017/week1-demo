@@ -5,8 +5,7 @@ body {
 nav ul {
     list-style: none;
     padding: none;
-
-    display: flex;
+    /* TODO style the nav so the menu items are next to each other */
 }
 
 nav li {
@@ -57,3 +56,5 @@ article {
     margin: 20px auto;
     padding: 10px;
 }
+
+/* TODO style images so their centered and not exceeding their parent */
